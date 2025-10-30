@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "app_bucket" {
   bucket = "sample-app-terraform-bucket-12345"
-  acl    = "public-read"                        # Issue 1: public-read ACL
+  acl    = "private"
 }
 
 resource "aws_iam_policy" "app_policy" {
